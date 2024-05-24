@@ -36,7 +36,7 @@ const Home = () => {
               <p className="text-[22px] font-[400] text-white">{data.title}</p>
               <button className="bg-white px-6 py-[4px] text-[#438E5B] text-[17px]">
                 {data.btnText === "RECENT SERMONS" ? (
-                  <a href={data.link} target="_blank">{data.btnText}</a>
+                  <a href={data.link} target="_blank" rel="noreferrer">{data.btnText}</a>
                 ) : (<Link to={data.link}>{data.btnText}</Link>)}
               </button>
             </div>
@@ -50,7 +50,7 @@ const Home = () => {
         <iframe className="w-full" height="315" src="https://www.youtube.com/embed/Q3WoElY3tl4?si=caF3c1I1QVpR11D4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <div className="flex justify-center">
           <button type="button" className="bg-[#FA4B4B] text-white px-4 py-[3px] my-4 rounded-lg">
-            <a href="https://www.youtube.com/@houseontherockaba4362" target="_blank">WATCH ON OUR YOUTUBE CHANNEL</a>
+            <a href="https://www.youtube.com/@houseontherockaba4362" target="_blank" rel="noreferrer">WATCH ON OUR YOUTUBE CHANNEL</a>
           </button>
         </div>
       </section>
@@ -62,7 +62,7 @@ const Home = () => {
         <div className="grid grid-cols-2 gap-4 justify-center my-6">
           {resources.map((img, index) => (
             <div key={index}>
-              <a href={img.link} target='_blank'>
+              <a href={img.link} target='_blank' rel="noreferrer">
                 <img className="w-full h-[100%]" src={img.img} alt="books_img" />
               </a>
             </div>
@@ -73,6 +73,7 @@ const Home = () => {
           <a
             href="https://annyikebudu.org"
             target="_blank"
+            rel="noreferrer"
           >
             https://annyikebudu.org
           </a>
@@ -81,16 +82,16 @@ const Home = () => {
       <section className="bg-[#99CC5A] w-full py-6 px-[5%]">
         <p className="text-white text-center text-[20px] font-sans font-[500] py-4">WE ARE SOCIAL</p>
         <div className="flex justify-center items-center gap-4">
-          <a href="https://web.facebook.com/HouseOnTheRockAba" target="_blank">
+          <a href="https://web.facebook.com/HouseOnTheRockAba" target="_blank" rel="noreferrer">
             <AiOutlineFacebook className="text-[24px]" />
           </a>
-          <a href="https://www.youtube.com/@houseontherockaba4362" target="_blank">
+          <a href="https://www.youtube.com/@houseontherockaba4362" target="_blank" rel="noreferrer">
             <CiYoutube className="text-[24px]" />
           </a>
-          <a href="https://t.me/hotraba" target="_blank">
+          <a href="https://t.me/hotraba" target="_blank" rel="noreferrer">
             <FaTelegramPlane className="text-[24px]" />
           </a>
-          <a href="https://www.instagram.com/hotraba/" target="_blank">
+          <a href="https://www.instagram.com/hotraba/" target="_blank" rel="noreferrer">
             <FaInstagram className="text-[24px]" />
           </a>
         </div>

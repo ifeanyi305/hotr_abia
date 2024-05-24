@@ -17,7 +17,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="bg-[#E7FFF1] w-full flex justify-center gap-[5%] items-center px-4 py-4">
+    <div className="bg-[#E7FFF1] w-full sticky top-0 flex justify-center gap-[5%] items-center px-4 py-4">
       <div>
         <Link to="/">
           <img src={logoWhite} alt="hotr_logo" className="" />

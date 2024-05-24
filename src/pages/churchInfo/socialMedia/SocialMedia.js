@@ -25,18 +25,18 @@ const SocialMedia = () => {
         </p>
         <div className="flex items-center gap-6 justify-center my-6">
           <div>
-            <a href="https://web.facebook.com/HouseOnTheRockAba" target="_blank">
+            <a href="https://web.facebook.com/HouseOnTheRockAba" target="_blank" rel="noreferrer">
               <AiOutlineFacebook className="text-[24px]" />
             </a>
-            <a href="https://www.youtube.com/@houseontherockaba4362" target="_blank">
+            <a href="https://www.youtube.com/@houseontherockaba4362" target="_blank" rel="noreferrer">
               <CiYoutube className="text-[24px] mt-4" />
             </a>
           </div>
           <div>
-            <a href="https://t.me/hotraba" target="_blank">
+            <a href="https://t.me/hotraba" target="_blank" rel="noreferrer">
               <FaTelegramPlane className="text-[24px]" />
             </a>
-            <a href="https://www.instagram.com/hotraba/" target="_blank">
+            <a href="https://www.instagram.com/hotraba/" target="_blank" rel="noreferrer">
               <FaInstagram className="text-[24px] mt-4" />
             </a>
           </div>
