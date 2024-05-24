@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Licorice&display=swap');
+@media screen and (max-width: 546px) {
+  .infoCon {
+    margin-top: 20%;
+  }
+}
+
+.licorice-regular {
+  font-family: "Licorice", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
