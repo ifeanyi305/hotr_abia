@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { GiHamburgerMenu } from "react-icons/gi";
+import Hr from "../../images/Hr.png"
 import { IoCloseSharp } from "react-icons/io5";
 import logoWhite from "../../images/logo.png";
 
@@ -17,7 +18,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="bg-[#E7FFF1] w-full sticky top-0 flex justify-center gap-[5%] items-center px-4 py-4">
+    <div className="bg-[#E7FFF1] z-50 w-full sticky top-0 flex justify-center gap-[5%] items-center px-4 py-4">
       <div>
         <Link to="/">
           <img src={logoWhite} alt="hotr_logo" className="" />
@@ -32,7 +33,7 @@ const Navbar = () => {
       </div>
       <div className={`fixed inset-y-0 left-0 w-64 bg-gray-900 text-white transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out`}>
         <div className="flex justify-between items-center p-4 border-b border-gray-700">
-          <h2 className="text-xl">Menu</h2>
+          <img src={logoWhite} alt="hotr_logo" className="w-[150px]" />
           <button
             className="text-xl"
             onClick={() => setIsOpen(false)}
@@ -44,10 +45,10 @@ const Navbar = () => {
           <ul>
             {menuItems.map((item, index) => (
               <Link to={item.href} onClick={() => setIsOpen(false)} key={index}>
-                <li key={index} className={`px-4 py-2 my-4 hover:bg-gray-700 ${item.special ? 'bg-[#23854C] w-[50%] px-2 mx-2' : ''}`}>
+                <li key={index} className={`px-4 py-2 font-[600] my-4 hover:bg-gray-700 ${item.special ? 'bg-[#23854C] w-fit px-2 mx-2 text-white font-[600]' : 'text-[#777777]'}`}>
                   {item.name}
                 </li>
-                <hr />
+                <img src={Hr} alt="hr_line" />
               </Link>
             ))}
           </ul>

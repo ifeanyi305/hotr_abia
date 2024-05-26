@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import Footer from '../../../components/footer/Footer';
+import ComponentFooter from '../../../components/footer/ComponentFooter';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -134,7 +134,7 @@ const MembersData = () => {
           </form>
         </div>
       </div>
-      <Footer />
+      <ComponentFooter />
     </div>
   );
 };

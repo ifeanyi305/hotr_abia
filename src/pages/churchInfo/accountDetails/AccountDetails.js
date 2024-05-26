@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from '../../../components/footer/Footer';
+import ComponentFooter from '../../../components/footer/ComponentFooter';
 import gtBank from "../../../images/gtbank.png";
 import { IoCopyOutline } from "react-icons/io5";
 
@@ -31,7 +31,7 @@ const AccountDetails = () => {
 
   return (
     <div>
-      <div className="bg-[#3A845D] w-full py-[10%] px-4">
+      <div className="w-full bgImage py-[10%] px-4">
         <p className="text-center text-[24px] text-white font-[600]">ACCOUNT DETAILS</p>
       </div>
       <div className="bg-[#E7FFF1] w-full  py-[5%] px-[7%]">
@@ -56,7 +56,7 @@ const AccountDetails = () => {
         </div>
         <p className="text-center my-4 text-[#8C8B8B] text-[20px] font-[400]">Thank you for support</p>
       </div>
-      <Footer />
+      <ComponentFooter />
     </div>
   );
 };

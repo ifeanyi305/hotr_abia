@@ -1,11 +1,11 @@
 import React from 'react';
-import Footer from '../../../components/footer/Footer';
+import ComponentFooter from '../../../components/footer/ComponentFooter';
 import { event } from '../../../data/data';
 
 const Announcements = () => {
   return (
     <div>
-      <div className="bg-[#3A845D] w-full py-[10%] px-4">
+      <div className="bgImage w-full py-[10%] px-4">
         <p className="text-center text-[24px] text-white font-[600]">Announcements</p>
       </div>
       <div className="bg-[#E7FFF1] w-full  py-[5%] px-[7%]">
@@ -17,7 +17,7 @@ const Announcements = () => {
           ))}
         </div>
       </div>
-      <Footer />
+      <ComponentFooter />
     </div>
   );
 };

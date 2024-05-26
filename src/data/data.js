@@ -12,6 +12,33 @@ import communion_serv from "../images/communion_service.png";
 import sunday_serv from "../images/sunday_serv.png";
 import online_serv from "../images/online_serv.png";
 import program from "../images/program.png";
+import organizeHustle from "../images/organizeHustle.png";
+import weedingGown from "../images/weddingGown.png";
+import takeLead from "../images/takeLead.png";
+import metamorphosis from "../images/metamophorsis.png";
+import theologyTime from "../images/TheologyTime.png";
+import lifePartner from "../images/lifePartner.png";
+import offloadMarry from "../images/offloadMarry.png";
+import marriedCheckout from "../images/marriedCheckout.png";
+import image1 from "../images/IMG1.jpg";
+import image2 from "../images/IMG2.jpg";
+import image3 from "../images/IMG3.jpg";
+import image4 from "../images/IMG4.jpg";
+import image5 from "../images/IMG5.jpg";
+import image6 from "../images/IMG6.jpg";
+import image7 from "../images/IMG7.jpg";
+import image8 from "../images/IMG8.jpg";
+import image9 from "../images/IMG9.jpg";
+import image10 from "../images/IMG10.jpg";
+import image11 from "../images/IMG11.jpg";
+import image12 from "../images/IMG12.jpg";
+import image13 from "../images/IMG13.jpg";
+import image14 from "../images/IMG14.jpg";
+import image15 from "../images/IMG15.jpg";
+import image16 from "../images/IMG16.jpg";
+import image17 from "../images/IMG17.jpg";
+import image18 from "../images/IMG18.jpg";
+import image19 from "../images/IMG19.jpg";
 
 export const infoData = [
   {
@@ -48,6 +75,38 @@ export const resources = [
     img: book4,
     link: "https://annyikebudu.org/course-details.php?training_slug=the-mirace-worker-1633783406",
   },
+  {
+    img: organizeHustle,
+    link: "https://annyikebudu.org/course-details.php?training_slug=organize-your-hustle-1642848559",
+  },
+  {
+    img: weedingGown,
+    link: "https://annyikebudu.org/course-details.php?training_slug=who-stole-my-wedding-gown-1634029514",
+  },
+  {
+    img: takeLead,
+    link: "https://annyikebudu.org/course-details.php?training_slug=take-the-lead-1634682433",
+  },
+  {
+    img: metamorphosis,
+    link: "https://annyikebudu.org/course-details.php?training_slug=metamorphosis-1634683687",
+  },
+  {
+    img: theologyTime,
+    link: "https://annyikebudu.org/course-details.php?training_slug=the-theology-of-time-1633776595",
+  },
+  {
+    img: lifePartner,
+    link: "https://annyikebudu.org/course-details.php?training_slug=how-to-choose-a-life-partner-1634032446",
+  },
+  {
+    img: offloadMarry,
+    link: "https://annyikebudu.org/course-details.php?training_slug=don-t-get-married-until-you-offload-1633780335",
+  },
+  {
+    img: marriedCheckout,
+    link: "https://annyikebudu.org/course-details.php?training_slug=don-t-get-married-until-you-check-him-out-1633778760",
+  },
 ];
 
 export const socialImages = [
@@ -62,6 +121,63 @@ export const socialImages = [
   },
   {
     img: lady_worship,
+  },
+  {
+    img: image1,
+  },
+  {
+    img: image2,
+  },
+  {
+    img: image3,
+  },
+  {
+    img: image4,
+  },
+  {
+    img: image5,
+  },
+  {
+    img: image6,
+  },
+  {
+    img: image7,
+  },
+  {
+    img: image8,
+  },
+  {
+    img: image9,
+  },
+  {
+    img: image10,
+  },
+  {
+    img: image11,
+  },
+  {
+    img: image12,
+  },
+  {
+    img: image13,
+  },
+  {
+    img: image14,
+  },
+  {
+    img: image15,
+  },
+  {
+    img: image16,
+  },
+  {
+    img: image17,
+  },
+  {
+    img: image18,
+  },
+  {
+    img: image19,
   },
 ]
 

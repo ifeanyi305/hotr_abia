@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import testimony from "../../../images/testimony.png";
 import prayers from "../../../images/prayers.png";
-import Footer from '../../../components/footer/Footer';
+import ComponentFooter from '../../../components/footer/ComponentFooter';
 
 const Devotion = () => {
   return (
@@ -34,7 +34,7 @@ const Devotion = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      <ComponentFooter />
     </div>
   );
 };

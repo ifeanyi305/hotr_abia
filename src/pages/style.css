@@ -10,3 +10,31 @@
   font-weight: 400;
   font-style: normal;
 }
+
+/* Apply to the body or any other element */
+.bgImage {
+  background-image: url('../images/bgImage.png');
+  background-color: #3A845D;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1200px) {
+  .bgImage {
+    background-size: contain;
+  }
+}
+
+@media (max-width: 768px) {
+  .bgImage {
+    background-size: cover;
+  }
+}
+
+@media (max-width: 480px) {
+  .bgImage {
+    background-size: cover;
+  }
+}

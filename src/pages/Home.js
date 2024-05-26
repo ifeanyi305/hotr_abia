@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import heroImg from "../images/hero_image.png";
 import horLine from "../images/horLine.png";
@@ -21,6 +21,44 @@ const InfoText = ({ text, className }) => (
 );
 
 const Home = () => {
+  const boxRef = useRef(null);
+  const [isPrevDisabled, setPrevDisabled] = useState(true);
+  const [isNextDisabled, setNextDisabled] = useState(false);
+
+  const handlePrev = () => {
+    const box = boxRef.current;
+    if (box) {
+      const width = box.clientWidth;
+      box.scrollLeft -= width;
+    }
+  };
+
+  const handleNext = () => {
+    const box = boxRef.current;
+    if (box) {
+      const width = box.clientWidth;
+      box.scrollLeft += width;
+    }
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const box = boxRef.current;
+      if (box) {
+        setPrevDisabled(box.scrollLeft === 0);
+        setNextDisabled(box.scrollLeft + box.clientWidth >= box.scrollWidth);
+      }
+    };
+
+    const box = boxRef.current;
+    if (box) {
+      box.addEventListener('scroll', handleScroll);
+      return () => {
+        box.removeEventListener('scroll', handleScroll);
+      };
+    }
+  }, []);
+
   return (
     <div>
       <section>
@@ -29,7 +67,7 @@ const Home = () => {
           <p className="mt-[-200px] text-[#23854C] text-center text-[64px] licorice-regular">Welcome Home</p>
         </div>
       </section>
-      <section className="bg-[#438E5B] w-full mt-[20%] py-12 px-[10%]">
+      <section className="bgImage w-full mt-[20%] py-12 px-[10%]">
         <div className="infoCon">
           {infoData.map((data, index) => (
             <div key={index} className="my-2">
@@ -59,14 +97,32 @@ const Home = () => {
           <p className="text-[#515151] text-[24px] font-[700] text-center">RESOURCES</p>
           <img src={horLine} alt="horLine" className="mt-[2px] m-auto w-[150px]" />
         </div>
-        <div className="grid grid-cols-2 gap-4 justify-center my-6">
-          {resources.map((img, index) => (
-            <div key={index}>
-              <a href={img.link} target='_blank' rel="noreferrer">
-                <img className="w-full h-[100%]" src={img.img} alt="books_img" />
-              </a>
-            </div>
-          ))}
+        <div className="flex items-center gap-2">
+          <button
+            onClick={handlePrev}
+            disabled={isPrevDisabled}
+            type="button"
+            className={`px-2 py-[4px] border-[#000] bg-gray-400 border-[1px] rounded-[50%] ${isPrevDisabled ? 'opacity-50 cursor-not-allowed' : ''}`}
+          >
+            &larr;
+          </button>
+          <div className="flex gap-4 my-6 swiper-wrapper overflow-x-auto xscrollbar" ref={boxRef}>
+            {resources.map((img, index) => (
+              <div key={index} className="min-w-[285px] w-full">
+                <a href={img.link} target='_blank' rel="noreferrer">
+                  <img className="w-full h-[100%]" src={img.img} alt="books_img" />
+                </a>
+              </div>
+            ))}
+          </div>
+          <button
+            onClick={handleNext}
+            disabled={isNextDisabled}
+            type="button"
+            className={`px-2 py-[4px] border-[#000] border-[1px] bg-gray-400 rounded-[50%] ${isNextDisabled ? 'opacity-50 cursor-not-allowed' : ''}`}
+          >
+            &rarr;
+          </button>
         </div>
         <p className="text-[19px] text-black text-center font-[500]">For more visit</p>
         <p className="text-[19px] text-[#99CC5A] text-center font-[500]">

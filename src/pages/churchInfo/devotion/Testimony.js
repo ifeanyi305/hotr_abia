@@ -3,7 +3,7 @@ import redLadyPraising from "../../../images/red_lady_praying.png";
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Footer from '../../../components/footer/Footer';
+import ComponentFooter from '../../../components/footer/ComponentFooter';
 import { IoArrowBackOutline } from "react-icons/io5";
 import { useNavigate } from 'react-router-dom';
 
@@ -139,7 +139,7 @@ const Testimony = () => {
           </p>
         </div>
       </div>
-      <Footer />
+      <ComponentFooter />
     </div>
   );
 };

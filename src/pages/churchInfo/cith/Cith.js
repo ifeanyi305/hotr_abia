@@ -1,6 +1,6 @@
 import React from 'react';
 import bible from "../../../images/read_bible.png";
-import Footer from '../../../components/footer/Footer';
+import ComponentFooter from '../../../components/footer/ComponentFooter';
 import { Link } from 'react-router-dom';
 
 const Cith = () => {
@@ -20,7 +20,7 @@ const Cith = () => {
         </div>
       </div>
       <div className="bottom-0 fixed w-full">
-        <Footer />
+        <ComponentFooter />
       </div>
     </div>
   );
