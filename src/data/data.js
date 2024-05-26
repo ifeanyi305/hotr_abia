@@ -32,13 +32,6 @@ import image9 from "../images/IMG9.jpg";
 import image10 from "../images/IMG10.jpg";
 import image11 from "../images/IMG11.jpg";
 import image12 from "../images/IMG12.jpg";
-import image13 from "../images/IMG13.jpg";
-import image14 from "../images/IMG14.jpg";
-import image15 from "../images/IMG15.jpg";
-import image16 from "../images/IMG16.jpg";
-import image17 from "../images/IMG17.jpg";
-import image18 from "../images/IMG18.jpg";
-import image19 from "../images/IMG19.jpg";
 
 export const infoData = [
   {
@@ -158,27 +151,6 @@ export const socialImages = [
   {
     img: image12,
   },
-  {
-    img: image13,
-  },
-  {
-    img: image14,
-  },
-  {
-    img: image15,
-  },
-  {
-    img: image16,
-  },
-  {
-    img: image17,
-  },
-  {
-    img: image18,
-  },
-  {
-    img: image19,
-  },
 ]
 
 export const event = [
@@ -221,7 +193,7 @@ export const contactInfo = {
       ],
   },
   resources: [
-      { title: 'WATCH SERMONS', platform: 'YOUTUBE' },
-      { title: 'LISTEN AND DOWNLOAD SERMONS', platform: 'TELEGRAM' },
+      { title: 'WATCH SERMONS', platform: 'YOUTUBE', link: "https://www.youtube.com/@houseontherockaba4362" },
+      { title: 'LISTEN AND DOWNLOAD SERMONS', platform: 'TELEGRAM', link: "https://t.me/hotraba" },
   ],
 };
