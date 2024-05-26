@@ -54,7 +54,7 @@ const AccountDetails = () => {
             </div>
           ))}
         </div>
-        <p className="text-center my-4 text-[#8C8B8B] text-[20px] font-[400]">Thank you for support</p>
+        <p className="text-center my-4 text-[#8C8B8B] text-[20px] font-[400]">Thank You For Support</p>
       </div>
       <ComponentFooter />
     </div>
