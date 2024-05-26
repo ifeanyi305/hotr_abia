@@ -180,7 +180,9 @@ const Home = () => {
           {contactInfo.resources.map((resource, index) => (
             <div key={index} className="my-6">
               <InfoText text={resource.title} className="text-[20px] font-[600]" />
-              <InfoText text={resource.platform} className="text-[18px]" />
+              <a href={resource.link} target="_blank" rel="noreferrer">
+                <InfoText text={resource.platform} className="text-[18px]" />
+              </a>
             </div>
           ))}
         </div>
