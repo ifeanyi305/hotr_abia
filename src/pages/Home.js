@@ -85,7 +85,7 @@ const Home = () => {
         <div className="py-6">
           <p className="text-[#515151] text-[23px] font-[500] text-center">Super Celebration Service</p>
         </div>
-        <iframe className="w-full" height="315" src="https://www.youtube.com/embed/Q3WoElY3tl4?si=caF3c1I1QVpR11D4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe className="w-full" height="200" src="https://www.youtube.com/embed/Q3WoElY3tl4?si=caF3c1I1QVpR11D4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <div className="flex justify-center">
           <button type="button" className="bg-[#FA4B4B] text-white px-4 py-[3px] my-4 rounded-lg">
             <a href="https://www.youtube.com/@houseontherockaba4362" target="_blank" rel="noreferrer">WATCH ON OUR YOUTUBE CHANNEL</a>
@@ -108,7 +108,7 @@ const Home = () => {
           </button>
           <div className="flex gap-4 my-6 swiper-wrapper overflow-x-auto xscrollbar" ref={boxRef}>
             {resources.map((img, index) => (
-              <div key={index} className="min-w-[285px] w-full">
+              <div key={index} className="min-w-[140px] w-full">
                 <a href={img.link} target='_blank' rel="noreferrer">
                   <img className="w-full h-[100%]" src={img.img} alt="books_img" />
                 </a>

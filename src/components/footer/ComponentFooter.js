@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from "../../images/logo_black.png";
 
 const ComponentFooter = () => {
   return (
