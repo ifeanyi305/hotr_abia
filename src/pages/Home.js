@@ -12,12 +12,12 @@ import { FaTelegramPlane } from "react-icons/fa";
 import { AiOutlineFacebook } from "react-icons/ai";
 import "./style.css";
 
-const SectionTitle = ({ title }) => (
-  <p className="text-[#858282] font-[600] text-[22px]">{title}</p>
+const SectionTitle = ({ title, className }) => (
+  <p className={`text-[#adacac] font-[400] text-[18px] ${className}`}>{title}</p>
 );
 
 const InfoText = ({ text, className }) => (
-  <p className={`text-[#858282] ${className}`}>{text}</p>
+  <p className={`text-[#adacac] ${className}`}>{text}</p>
 );
 
 const Home = () => {
@@ -70,7 +70,7 @@ const Home = () => {
       <section className="bgImage w-full mt-[20%] py-12 px-[10%]">
         <div className="infoCon">
           {infoData.map((data, index) => (
-            <div key={index} className="my-2">
+            <div key={index} className="my-8">
               <p className="text-[22px] font-[400] text-white">{data.title}</p>
               <button className="bg-white px-6 py-[4px] text-[#438E5B] text-[17px]">
                 {data.btnText === "RECENT SERMONS" ? (
@@ -83,12 +83,14 @@ const Home = () => {
       </section>
       <section className="bg-[#DDDDDD] w-full py-6 px-[10%]">
         <div className="py-6">
-          <p className="text-[#515151] text-[23px] font-[500] text-center">Super Celebration Service</p>
+          <p className="text-[#515151] text-[23px] font-[500] text-center">
+            Business &amp; Leadership Teaching
+          </p>
         </div>
-        <iframe className="w-full" height="200" src="https://www.youtube.com/embed/Q3WoElY3tl4?si=caF3c1I1QVpR11D4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe className="w-full" height="200" src="https://www.youtube.com/embed/B9U-9N3vwSM?si=gL0JpsBNCCah_PaH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <div className="flex justify-center">
           <button type="button" className="bg-[#FA4B4B] text-white px-4 py-[3px] my-4 rounded-lg">
-            <a href="https://www.youtube.com/@houseontherockaba4362" target="_blank" rel="noreferrer">WATCH ON OUR YOUTUBE CHANNEL</a>
+            <a href="https://www.youtube.com/@houseontherockaba4362/videos" target="_blank" rel="noreferrer">WATCH ON YOUTUBE</a>
           </button>
         </div>
       </section>
@@ -155,33 +157,33 @@ const Home = () => {
       <section className="bg-[#313131] w-full py-6 px-[10%]">
         <div>
           <SectionTitle title="CONTACT US" />
-          <div className="my-4">
-            <InfoText text={contactInfo.phone} className="text-[18px]" />
-            <InfoText text={contactInfo.email} className="text-[18px]" />
+          <div className="mb-4">
+            <InfoText text={contactInfo.phone} className="text-[14px]" />
+            <InfoText text={contactInfo.email} className="text-[14px]" />
           </div>
           <div className="my-8">
             {contactInfo.address.map((line, index) => (
-              <InfoText key={index} text={line} className={index === 0 ? "text-[21px] font-[600]" : "text-[18px]"} />
+              <InfoText key={index} text={line} className={index === 0 ? "text-[18px] font-[400]" : "text-[14px]"} />
             ))}
           </div>
-          <SectionTitle title="SERVICE TIMES" />
+          <SectionTitle title="SERVICE TIMES" className="text-[19px] font-[600]" />
           <div className="my-4">
-            <InfoText text="SUNDAYS" className="text-[20px] font-[600]" />
+            <InfoText text="SUNDAYS" className="text-[18px] font-[400]" />
             {contactInfo.serviceTimes.sundays.map((time, index) => (
-              <InfoText key={index} text={time} className="text-[18px]" />
+              <InfoText key={index} text={time} className="text-[14px]" />
             ))}
           </div>
           <div className="my-4">
-            <InfoText text="THURSDAYS" className="text-[20px] font-[600]" />
+            <InfoText text="THURSDAYS" className="text-[18px] font-[400]" />
             {contactInfo.serviceTimes.thursdays.map((time, index) => (
-              <InfoText key={index} text={time} className="text-[18px]" />
+              <InfoText key={index} text={time} className="text-[14px]" />
             ))}
           </div>
           {contactInfo.resources.map((resource, index) => (
             <div key={index} className="my-6">
-              <InfoText text={resource.title} className="text-[20px] font-[600]" />
+              <InfoText text={resource.title} className="text-[18px] font-[600]" />
               <a href={resource.link} target="_blank" rel="noreferrer">
-                <InfoText text={resource.platform} className="text-[18px]" />
+                <InfoText text={resource.platform} className="text-[14px]" />
               </a>
             </div>
           ))}

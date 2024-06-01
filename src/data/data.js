@@ -20,18 +20,18 @@ import theologyTime from "../images/TheologyTime.png";
 import lifePartner from "../images/lifePartner.png";
 import offloadMarry from "../images/offloadMarry.png";
 import marriedCheckout from "../images/marriedCheckout.png";
-import image1 from "../images/IMG1.jpg";
-import image2 from "../images/IMG2.jpg";
-import image3 from "../images/IMG3.jpg";
-import image4 from "../images/IMG4.jpg";
-import image5 from "../images/IMG5.jpg";
-import image6 from "../images/IMG6.jpg";
-import image7 from "../images/IMG7.jpg";
-import image8 from "../images/IMG8.jpg";
-import image9 from "../images/IMG9.jpg";
-import image10 from "../images/IMG10.jpg";
-import image11 from "../images/IMG11.jpg";
-import image12 from "../images/IMG12.jpg";
+// import image1 from "../images/IMG1.jpg";
+// import image2 from "../images/IMG2.jpg";
+// import image3 from "../images/IMG3.jpg";
+// import image4 from "../images/IMG4.jpg";
+// import image5 from "../images/IMG5.jpg";
+// import image6 from "../images/IMG6.jpg";
+// import image7 from "../images/IMG7.jpg";
+// import image8 from "../images/IMG8.jpg";
+// import image9 from "../images/IMG9.jpg";
+// import image10 from "../images/IMG10.jpg";
+// import image11 from "../images/IMG11.jpg";
+// import image12 from "../images/IMG12.jpg";
 
 export const infoData = [
   {
@@ -115,42 +115,42 @@ export const socialImages = [
   {
     img: lady_worship,
   },
-  {
-    img: image1,
-  },
-  {
-    img: image2,
-  },
-  {
-    img: image3,
-  },
-  {
-    img: image4,
-  },
-  {
-    img: image5,
-  },
-  {
-    img: image6,
-  },
-  {
-    img: image7,
-  },
-  {
-    img: image8,
-  },
-  {
-    img: image9,
-  },
-  {
-    img: image10,
-  },
-  {
-    img: image11,
-  },
-  {
-    img: image12,
-  },
+  // {
+  //   img: image1,
+  // },
+  // {
+  //   img: image2,
+  // },
+  // {
+  //   img: image3,
+  // },
+  // {
+  //   img: image4,
+  // },
+  // {
+  //   img: image5,
+  // },
+  // {
+  //   img: image6,
+  // },
+  // {
+  //   img: image7,
+  // },
+  // {
+  //   img: image8,
+  // },
+  // {
+  //   img: image9,
+  // },
+  // {
+  //   img: image10,
+  // },
+  // {
+  //   img: image11,
+  // },
+  // {
+  //   img: image12,
+  // },
 ]
 
 export const event = [
@@ -197,3 +197,116 @@ export const contactInfo = {
       { title: 'LISTEN AND DOWNLOAD SERMONS', platform: 'TELEGRAM', link: "https://t.me/hotraba" },
   ],
 };
+
+export const cithData = [
+  {
+    location: 'No. 9, Aguwa Street, Off Ovom Street Opposite First Bank, Ogbor Hill',
+    leader: 'Osondu Chiedozie',
+    contactNumber: '08030554267',
+  },
+  {
+    location: 'No. 84, Ibadan Street Road Off Ngwa Road',
+    leader: 'Grace Kalu Anagha',
+    contactNumber: '08035949048',
+  },
+  {
+    location: 'No. 3, Obiehie Street Off Calabar Street, GRA',
+    leader: 'Samuel Balogun',
+    contactNumber: '08134959068',
+  },
+  {
+    location: 'No. 1, Peter Onono Off Sacred Heart, Faulks Road',
+    leader: 'Marvellous Unachukwu',
+    contactNumber: '07033538215',
+  },
+  {
+    location: 'No. 3, Alvan Ikoku Avenue Off PZ Road, Eziama',
+    leader: 'Chibueze Anosike',
+    contactNumber: '08036296120',
+  },
+  {
+    location: 'No. 48b, Egbelu Street Off Immaculate Avenue, Umungasi',
+    leader: 'Favour Ben Emeka',
+    contactNumber: '07065103773',
+  },
+  {
+    location: 'No. 13, Onyeguchi Street Off Umuocham Road',
+    leader: 'Mrs. Lizzy Emuraye',
+    contactNumber: '09074219471',
+  },
+  {
+    location: 'No. 40 Umuimo Road off Aforule Opposite Romalex Hospital',
+    leader: 'Min. Chidiebere Miracle',
+    contactNumber: '08084888404',
+  },
+  {
+    location: 'No. 3, Nnochirionye Street Off Umuchichi Council Hall',
+    leader: 'Chris Njoku',
+    contactNumber: '08068408594',
+  },
+  {
+    location: 'No. 9, Ndukwe Street Off St. Paul’s Anglican Church, Kamalu By Star Paper Mill',
+    leader: 'Zion Nwachukwu',
+    contactNumber: '08142652468',
+  },
+  {
+    location: 'No. 6, Maduforo Off Orji Street, Umule Rd.',
+    leader: 'Ikechukwu Ekpendu',
+    contactNumber: '07030378722',
+  },
+  {
+    location: 'No. 17, Prof. O C NWogu Close, Off Afule Rd.',
+    leader: 'Tony Ogbonna Miss Ifeyinwa Samuel',
+    contactNumber: '08134417990 (08164111224)',
+  },
+  {
+    location: 'No. 14B, Ama Sabbath Road By 214 Aba Owerri Road, Opposite Crunchies Abayi, Behind SDA',
+    leader: 'Stanley Erondu Ekeoma',
+    contactNumber: '08166440313',
+  },
+  {
+    location: 'No. 171, Tenant Road, By Georges, Close To CS Park, Aba',
+    leader: 'Ogechi Peculiar',
+    contactNumber: '08181807270',
+  },
+  {
+    location: 'No. 12, Piko Lane By Ama Double Okpulu Umuobo',
+    leader: 'Victor Enyinnaya',
+    contactNumber: '07065755799',
+  },
+  {
+    location: 'Onugo Heaven Estate Behind St. Raphael Catholic Church Okpulu Umuobo Through Ama Double (Estate Vice Chairman Residence)',
+    leader: 'Peter Udensi',
+    contactNumber: '08037639474',
+  },
+  {
+    location: 'No. 142, Aba Owerri Road, Abayi After Rufus Obi Chemist',
+    leader: 'Min, Henry Iwunze',
+    contactNumber: '09035499378',
+  },
+  {
+    location: 'No. 14, Redeemers Street Off World Bank Housing Estate Off Umuocham (LA Hero Close To Chrispat Hospital)',
+    leader: 'Uche Mgbeahuruike',
+    contactNumber: '08057770174',
+  },
+  {
+    location: 'No. 52B, Udeagbala Road Opposite Avenue Transformer 3rd Floor Back',
+    leader: 'Mr. Chiemela',
+    contactNumber: '08036653497',
+  },
+  {
+    location: 'No. 24, Nicholas Off Brass Adjacent Abia Poly',
+    leader: 'Bethel Godswill',
+    contactNumber: '08132495659',
+  },
+  {
+    location: 'No. 71, Umule Road Second Floor',
+    leader: 'Mr. Ogbonna Ajah',
+    contactNumber: '08142652468',
+  },
+  {
+    location: 'No. 12/16, Emereole Street Umuode Village, Osisioma Ngwa LGA (Close To Mercy Gate Hospital Road)',
+    leader: 'Enyinnaya Victor',
+    contactNumber: '07065755799',
+  },
+];

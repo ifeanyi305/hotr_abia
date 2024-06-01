@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Navbar from "./components/navbar/Navbar";
 import SocialMedia from "./pages/churchInfo/socialMedia/SocialMedia";
 import AccountDetails from "./pages/churchInfo/accountDetails/AccountDetails";
-import Announcements from "./pages/churchInfo/announcements/Announcements";
+// import Announcements from "./pages/churchInfo/announcements/Announcements";
 import Cith from "./pages/churchInfo/cith/Cith";
 import MembersData from "./pages/churchInfo/cith/MembersData";
 import Devotion from "./pages/churchInfo/devotion/Devotion";
@@ -18,12 +18,12 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/socials" element={<SocialMedia />} />
         <Route path="/partner" element={<AccountDetails />} />
-        <Route path="/announcements" element={<Announcements />} />
+        {/* <Route path="/announcements" element={<Announcements />} /> */}
         <Route path="/church_in_the_home" element={<Cith />} />
         <Route path="/church_in_the_home/updpate_data" element={<MembersData />} />
         <Route path="/devotion" element={<Devotion />} />
-        <Route path="/devotion/testimony" element={<Testimony />} />
-        <Route path="/devotion/prayer_request" element={<Prayer />} />
+        <Route path="/testimony" element={<Testimony />} />
+        <Route path="/prayer_request" element={<Prayer />} />
       </Routes>
     </div>
   );
