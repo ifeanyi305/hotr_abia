@@ -4,12 +4,9 @@ import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import ComponentFooter from '../../../components/footer/ComponentFooter';
-import { IoArrowBackOutline } from "react-icons/io5";
-import { useNavigate } from 'react-router-dom';
 
 const Testimony = () => {
   const form = useRef();
-  const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(false)
   const [formData, setFormData] = useState({
     user_name: '',
@@ -58,10 +55,6 @@ const Testimony = () => {
       );
   };
 
-  const handleBackClick = () => {
-    navigate(-1);
-  };
-
   const fields = [
     { id: 'user_name', type: 'text', placeholder: 'Tell Us Your Name', name: "user_name", special: true },
     { id: 'user_whatsapp', type: 'number', placeholder: 'WhatsApp Phone Number', name: "user_whatsapp", },
@@ -87,12 +80,6 @@ const Testimony = () => {
       <div className="w-full">
         <img src={redLadyPraising} className="w-full" alt="redLadyPraising" />
       </div>
-      <button
-        onClick={handleBackClick}
-        type="button"
-        className="absolute border-[1px] border-black rounded top-[21%] left-[16%]">
-        <IoArrowBackOutline />
-      </button>
       <div className="bg-[#FEECEC] w-full pb-4 px-[6%]">
         <form className="py-2 w-full max-w-[80%] m-auto mt-[-6%]" id="form" ref={form} onSubmit={handleSubmit}>
           {fields.map(field => (
@@ -124,7 +111,7 @@ const Testimony = () => {
           ))}
           <div className="flex items-center justify-center">
             <button
-              className="text-[#FA4B4B] bg-[#FEECEC] border-[1px] border-white font-bold py-[2px] px-4 rounded-xl focus:outline-none focus:shadow-outline"
+              className="text-[#FA4B4B] bg-[#fff] border-[1px] border-[#FEECEC] font-bold py-[2px] px-6 rounded-lg shadow-2xl focus:outline-none focus:shadow-outline"
               type="submit"
             >
               {isLoading ? "loading..." : "Submit"}
