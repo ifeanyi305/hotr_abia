@@ -2,11 +2,8 @@ import React, { useState } from 'react';
 import ComponentFooter from '../../../components/footer/ComponentFooter';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { useNavigate } from 'react-router-dom';
-import { IoArrowBackOutline } from "react-icons/io5";
 
 const MembersData = () => {
-  const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(false);
 
   const [formData, setFormData] = useState({
@@ -128,9 +125,6 @@ const MembersData = () => {
     "Vessels of Glory",
     "Rock Theatre",
   ];
-  const handleBackClick = () => {
-    navigate(-1);
-  };
 
   return (
     <div>
@@ -149,12 +143,6 @@ const MembersData = () => {
         />
       </div>
       <div className="bg-[#D3FFE4] w-full py-[5%] px-[7%]">
-        <button
-          onClick={handleBackClick}
-          type="button"
-          className="border-[1px] border-black rounded">
-          <IoArrowBackOutline />
-        </button>
         <div>
           <p className="text-[#5EA078] font-[600] text-[22px]">
             Membership Data Update
@@ -165,7 +153,7 @@ const MembersData = () => {
           <form className="py-2 w-full max-w-sm" onSubmit={handleSubmit} id="form">
             {fields.map(field => (
               <div className="mb-4" key={field.id}>
-                <p className="pl-6 text-[#9CA3AF]">{field.label}</p>
+                <p className="pl-6 text-[#9CA3AF] text-[13px]">{field.label}</p>
                 {field.name !== "department" ? (
                   <input
                     className={`shadow bg-white py-4 px-6 appearance-none border rounded w-full text-[#8C8B8B]
@@ -183,8 +171,8 @@ const MembersData = () => {
                   />
                 ) : (
                   <div>
-                    <label className="pl-6 text-[#9CA3AF]">
-                      Are you currently in a department?
+                    <label className={`pl-6 text-[#9CA3AF] text-[15px] ${inDepartment ? "hidden" : "block"}`}>
+                      Are you currently in a department? {inDepartment ? (<>(No)</>) : (<>(Yes)</>)}
                       <input
                         type="checkbox"
                         name="inDepartment"
@@ -194,7 +182,7 @@ const MembersData = () => {
                       />
                     </label>
                     <select
-                      className="shadow bg-white py-4 px-6 appearance-none border rounded w-full text-[#8C8B8B] text-[16px] leading-tight focus:outline-none focus:shadow-outline"
+                      className="shadow bg-white py-4 px-6 appearance-none border rounded w-full text-[#9CA3AF] text-[16px] leading-tight focus:outline-none focus:shadow-outline"
                       name={formData.inDepartment ? "department" : "loveToJoinDepartment"}
                       id={formData.inDepartment ? "department" : "loveToJoinDepartment"}
                       value={formData.inDepartment ? formData.department : formData.loveToJoinDepartment}

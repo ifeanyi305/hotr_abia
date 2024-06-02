@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import bible from "../../../images/read_bible.png";
 import ComponentFooter from '../../../components/footer/ComponentFooter';
-import { Link } from 'react-router-dom';
 import { cithData } from '../../../data/data';
 
 const Cith = () => {
@@ -22,14 +21,6 @@ const Cith = () => {
         <div className="">
           <div className="mb-4 flex justify-center">
             <img src={bible} alt="read_bible" />
-          </div>
-          <p className="text-[#5EA078] font-[500] text-[20px] text-center">
-            We would like to know about you, so we could reach out to you
-          </p>
-          <div className="flex justify-center">
-            <button type="button" className="bg-[#5EA078] mt-4 text-white px-6 py-2 rounded-xl font-[600] text-[20px] text-center">
-              <Link to="/church_in_the_home/updpate_data">Update your data</Link>
-            </button>
           </div>
         </div>
         <input
