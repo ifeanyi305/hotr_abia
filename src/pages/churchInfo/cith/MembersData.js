@@ -153,7 +153,7 @@ const MembersData = () => {
           <form className="py-2 w-full max-w-sm" onSubmit={handleSubmit} id="form">
             {fields.map(field => (
               <div className="mb-4" key={field.id}>
-                <p className="pl-6 text-[#9CA3AF] text-[13px]">{field.label}</p>
+                <p className="pl-6 text-[#9CA3AF] md:hidden text-[13px] absolute pt-4">{field.label}</p>
                 {field.name !== "department" ? (
                   <input
                     className={`shadow bg-white py-4 px-6 appearance-none border rounded w-full text-[#8C8B8B]
@@ -171,8 +171,8 @@ const MembersData = () => {
                   />
                 ) : (
                   <div>
-                    <label className={`pl-6 text-[#9CA3AF] text-[15px] ${inDepartment ? "hidden" : "block"}`}>
-                      Are you currently in a department? {inDepartment ? (<>(No)</>) : (<>(Yes)</>)}
+                    <label className="pl-6 text-[#9CA3AF] text-[15px]">
+                      Are you currently in a department? (Yes)
                       <input
                         type="checkbox"
                         name="inDepartment"
