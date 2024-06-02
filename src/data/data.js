@@ -1,8 +1,12 @@
+import React from 'react';
 import book1 from "../images/book1.png";
 import book2 from "../images/book2.png";
 import book3 from "../images/book3.png";
 import book4 from "../images/book4.png";
-import lady_praising from "../images/lady_praising.png";
+import { FaYoutube } from "react-icons/fa";
+import { BiSolidDonateHeart } from "react-icons/bi";
+import { IoLocation } from "react-icons/io5";
+import lady_praising from "../images/lady_praising.jpeg";
 import man_worshiping from "../images/man_worshiping.jpeg";
 import lady_alter from "../images/lady_alter.jpeg"
 import lady_worship from "../images/lady_worshiping.jpeg"
@@ -37,16 +41,19 @@ export const infoData = [
   {
     title: "RECENT SERMONS",
     btnText: "WATCH",
+    icon: <FaYoutube className="mt-[-3px]" />,
     link: "https://www.youtube.com/@houseontherockaba4362"
   },
   {
     title: "PARTNER WITH US",
     btnText: "GIVE",
+    icon: <BiSolidDonateHeart className="mt-[-3px]" />,
     link: "/partner"
   },
   {
     title: "CITH CENTERS NEAR YOU",
     btnText: "LOCATIONS",
+    icon: <IoLocation className="mt-[-3px]" />,
     link: "/church_in_the_home"
   },
 ];

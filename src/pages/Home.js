@@ -72,7 +72,8 @@ const Home = () => {
           {infoData.map((data, index) => (
             <div key={index} className="my-8">
               <p className="text-[22px] font-[400] text-white">{data.title}</p>
-              <button className="bg-white px-6 py-[4px] text-[#438E5B] text-[17px]">
+              <button className="bg-white flex items-center gap-2 px-6 py-[4px] text-[#438E5B] text-[17px]">
+                {data.icon}
                 {data.btnText === "RECENT SERMONS" ? (
                   <a href={data.link} target="_blank" rel="noreferrer">{data.btnText}</a>
                 ) : (<Link to={data.link}>{data.btnText}</Link>)}
@@ -84,7 +85,7 @@ const Home = () => {
       <section className="bg-[#DDDDDD] w-full py-6 px-[10%]">
         <div className="py-6">
           <p className="text-[#515151] text-[23px] font-[500] text-center">
-            Business &amp; Leadership Teaching
+            Business &amp; Leadership Teachings
           </p>
         </div>
         <iframe className="w-full" height="200" src="https://www.youtube.com/embed/B9U-9N3vwSM?si=gL0JpsBNCCah_PaH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -104,7 +105,7 @@ const Home = () => {
             onClick={handlePrev}
             disabled={isPrevDisabled}
             type="button"
-            className={`px-2 py-[4px] border-[#000] bg-gray-400 border-[1px] rounded-[50%] ${isPrevDisabled ? 'opacity-50 cursor-not-allowed' : ''}`}
+            className={`px-2 py-[4px] text-white border-[#E7FFF1] bg-[#99CC5A] border-[1px] rounded-[50%] ${isPrevDisabled ? 'opacity-50 cursor-not-allowed' : ''}`}
           >
             &larr;
           </button>
@@ -121,7 +122,7 @@ const Home = () => {
             onClick={handleNext}
             disabled={isNextDisabled}
             type="button"
-            className={`px-2 py-[4px] border-[#000] border-[1px] bg-gray-400 rounded-[50%] ${isNextDisabled ? 'opacity-50 cursor-not-allowed' : ''}`}
+            className={`px-2 py-[4px] border-[#E7FFF1] text-white border-[1px] bg-[#99CC5A] rounded-[50%] ${isNextDisabled ? 'opacity-50 cursor-not-allowed' : ''}`}
           >
             &rarr;
           </button>

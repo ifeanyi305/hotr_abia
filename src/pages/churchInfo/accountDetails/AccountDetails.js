@@ -59,7 +59,7 @@ const AccountDetails = () => {
       </div>
       <div className="bg-[#E7FFF1] w-full  py-[5%] px-[7%]">
         <div className="bg-white p-6">
-          <p className="text-[#23854c] text-center pb-6">House On The Rock Aba</p>
+          <p className="text-[#23854c] text-center font-extrabold text-[24px] pb-6">House On The Rock Aba</p>
           <img src={gtBank} alt="gt_bank_logo" className="m-auto my-4" />
           {accountDetails.map((detail, index) => (
             <div className="bg-[#F6F6F6] rounded-2xl p-4 my-4">

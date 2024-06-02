@@ -40,18 +40,18 @@ const SocialMedia = () => {
         <div className="flex items-center gap-8 justify-center my-6">
           <div>
             <a href="https://web.facebook.com/HouseOnTheRockAba" target="_blank" rel="noreferrer">
-              <AiOutlineFacebook className="text-[34px] font-extrabold" />
+              <AiOutlineFacebook className="text-[40px] font-extrabold" />
             </a>
             <a href="https://www.youtube.com/@houseontherockaba4362" target="_blank" rel="noreferrer">
-              <CiYoutube className="text-[38px] font-extrabold mt-4" />
+              <CiYoutube className="text-[44px] font-extrabold mt-4" />
             </a>
           </div>
           <div>
             <a href="https://t.me/hotraba" target="_blank" rel="noreferrer">
-              <FaTelegramPlane className="text-[34px] font-extrabold" />
+              <FaTelegramPlane className="text-[40px] font-extrabold" />
             </a>
             <a href="https://www.instagram.com/hotraba/" target="_blank" rel="noreferrer">
-              <FaInstagram className="text-[34px] font-extrabold mt-4" />
+              <FaInstagram className="text-[40px] font-extrabold mt-4" />
             </a>
           </div>
         </div>
