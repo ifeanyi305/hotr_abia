@@ -1,0 +1,27 @@
+.pwa_con {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  width: 100%;
+  gap: 1.5rem;
+  position: fixed;
+  padding: 10px 20px;
+  bottom: 1px;
+  left: 3px;
+}
+
+.pwa_con p {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Gill Sans', sans-serif;
+}
+
+#installButton {
+  background-color: #99CC5A;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 20px;
+  cursor: pointer;
+}

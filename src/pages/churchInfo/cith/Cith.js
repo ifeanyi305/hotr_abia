@@ -8,12 +8,16 @@ const Cith = () => {
   const [filteredData, setFilteredData] = useState(cithData);
 
   const handleSearchChange = (event) => {
-    setSearchTerm(event.target.value);
+    const searchTerm = event.target.value.toLowerCase();
+    setSearchTerm(searchTerm);
     const filtered = cithData.filter((item) =>
-      item.location.toLowerCase().includes(event.target.value.toLowerCase())
+      (item.location && item.location.toLowerCase().includes(searchTerm)) ||
+      (item.leader && item.leader.toLowerCase().includes(searchTerm)) ||
+      (item.contactNumber && item.contactNumber.toLowerCase().includes(searchTerm))
     );
     setFilteredData(filtered);
   };
+  
 
   return (
     <div>
@@ -25,7 +29,7 @@ const Cith = () => {
         </div>
         <input
           type="text"
-          placeholder="Search by location"
+          placeholder="Search by location and more..."
           value={searchTerm}
           onChange={handleSearchChange}
           className="w-full px-4 py-2 my-4 text-gray-700 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
