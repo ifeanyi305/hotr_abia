@@ -15,6 +15,7 @@ const Navbar = () => {
     { name: 'TESTIMONY', href: '/testimony' },
     { name: 'PRAYER', href: '/prayer_request' },
     { name: 'WE ARE SOCIAL', href: '/socials' },
+    { name: 'ABOUT', href: '/about' },
   ];
 
   return (

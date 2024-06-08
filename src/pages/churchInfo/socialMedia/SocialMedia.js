@@ -26,7 +26,7 @@ const SocialMedia = () => {
       <div className="bgImage w-full py-[10%] px-4">
         <p className="text-center text-[24px] text-white font-[600]">SOCIAL MEDIA</p>
       </div>
-      <div className="bg-[#E7FFF1] w-full  py-[5%] px-[7%]">
+      <div className="bg-[#E7FFF1] w-full  py-[5%] px-[7%] h-svh">
         <div className="grid grid-cols-2 gap-4 justify-center my-6">
           {socialImages.map((img, index) => (
             <div key={index}>

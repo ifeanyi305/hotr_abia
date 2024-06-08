@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import heroImg from "../images/hero_image.png";
+import heroImg from "../images/hotr_church.jpeg";
 import horLine from "../images/horLine.png";
 import Footer from '../components/footer/Footer';
 import { contactInfo } from '../data/data';
@@ -64,7 +64,7 @@ const Home = () => {
       <section>
         <img src={heroImg} alt="hero section img" className="w-full" />
         <div className="px-[2px]">
-          <p className="mt-[-200px] text-[#23854C] text-center text-[64px] licorice-regular">Welcome Home</p>
+          <p className="mt-[-200px] text-[#91edb7] text-center text-[64px] font-[600] licorice-regular">Welcome Home</p>
         </div>
       </section>
       <section className="bgImage w-full mt-[20%] py-12 px-[10%]">
@@ -177,6 +177,12 @@ const Home = () => {
           <div className="my-4">
             <InfoText text="THURSDAYS" className="text-[18px] font-[400]" />
             {contactInfo.serviceTimes.thursdays.map((time, index) => (
+              <InfoText key={index} text={time} className="text-[14px]" />
+            ))}
+          </div>
+          <div className="my-4">
+            <InfoText text="SATURDAYS" className="text-[18px] font-[400]" />
+            {contactInfo.serviceTimes.saturdays.map((time, index) => (
               <InfoText key={index} text={time} className="text-[14px]" />
             ))}
           </div>

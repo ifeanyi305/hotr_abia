@@ -9,6 +9,7 @@ import MembersData from "./pages/churchInfo/cith/MembersData";
 import Devotion from "./pages/churchInfo/devotion/Devotion";
 import Testimony from "./pages/churchInfo/devotion/Testimony";
 import Prayer from "./pages/churchInfo/devotion/Prayer";
+import About from "./pages/churchInfo/about/About";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/devotion" element={<Devotion />} />
         <Route path="/testimony" element={<Testimony />} />
         <Route path="/prayer_request" element={<Prayer />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </div>
   );

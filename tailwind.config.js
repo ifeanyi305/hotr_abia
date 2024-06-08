@@ -16,6 +16,13 @@ module.exports = {
         "2xl": "1400px",
       },
     },
+    listStyleType: {
+      none: 'none',
+      disc: 'disc',
+      decimal: 'decimal',
+      square: 'square',
+      roman: 'upper-roman',
+    },
     extend: {
       keyframes: {
         "accordion-down": {

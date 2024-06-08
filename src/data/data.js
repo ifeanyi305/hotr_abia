@@ -198,12 +198,42 @@ export const contactInfo = {
       thursdays: [
           'AT 5:45 PM - MIDWEEK SERVICE',
       ],
+      saturdays: [
+        'AT 8:00 AM - MAN2MAN BREAKFAST MEETING',
+    ],
   },
   resources: [
       { title: 'WATCH SERMONS', platform: 'YOUTUBE', link: "https://www.youtube.com/@houseontherockaba4362" },
       { title: 'LISTEN AND DOWNLOAD SERMONS', platform: 'TELEGRAM', link: "https://t.me/hotraba" },
   ],
 };
+
+export const aboutInfo = [
+  {
+    title: "ABOUT US",
+    desc: "House on The Rock Aba, a vibrant branch of House on The Rock, was inaugurated on March 10th, 2010. With a thriving community of over 2,000 parishioners, the church has become a beacon of excellence and innovative ministry in the heart of Aba.",
+    id: 1,
+  },
+  {
+    title: "VISION:",
+    list1: "A VOICE OF EXCELLENCE",
+    list2: "HAND OF POWER",
+    list3: "BRIDGE OF HOPE",
+    id: 2,
+  },
+  {
+    title: "MISSION:",
+    desc: "RASING TRANSFORMATIONAL LEADERS",
+    id: 3,
+  },
+  {
+    title: "COMMITMENT:",
+    list1: "Fostering a spirit of excellence in all aspects of our ministry.",
+    list2: "Equipping individuals to become leaders who transform their communities.",
+    list3: "Embracing innovative approaches to spread the Gospel message.",
+    id: 4,
+  },
+]
 
 export const cithData = [
   {

@@ -153,7 +153,9 @@ const MembersData = () => {
           <form className="py-2 w-full max-w-sm" onSubmit={handleSubmit} id="form">
             {fields.map(field => (
               <div className="mb-4" key={field.id}>
-                <p className="pl-6 text-[#9CA3AF] md:hidden text-[13px] absolute pt-4">{field.label}</p>
+                {field.name !== "birthday" || !formData[field.id] ? (
+                  <p className={`pl-6 text-[#9CA3AF] md:hidden text-[13px] absolute pt-4`}>{field.label}</p>
+                ) : null}
                 {field.name !== "department" ? (
                   <input
                     className={`shadow bg-white py-4 px-6 appearance-none border rounded w-full text-[#8C8B8B]
