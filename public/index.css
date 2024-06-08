@@ -1,5 +1,6 @@
 .pwa_con {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   background-color: white;
@@ -12,8 +13,8 @@
 }
 
 .pwa_con p {
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 15px;
+  font-weight: 400;
   font-family: 'Gill Sans', sans-serif;
 }
 
