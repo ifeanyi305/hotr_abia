@@ -29,7 +29,7 @@ const Navbar = () => {
         {menuItems.map((menu, index) => (
           <ul key={index}>
             <Link to={menu.href} onClick={() => setIsOpen(false)} key={index}>
-              <li className="font-[600] my-6 text-[#777777]">{menu.name}</li>
+              <li className="font-[600] my-6 text-[#777777] hover:text-[#99CC5A]">{menu.name}</li>
             </Link>
           </ul>
         ))}
