@@ -6,7 +6,7 @@ import aboutusImg from "../../../images/aboutImg.jpeg";
 const About = () => {
   return (
     <div>
-      <div className="py-[8%] bg-[#E7FFF1] h-svh">
+      <div className="py-[8%] bg-[#E7FFF1]">
         <div className="w-full">
           <img src={aboutusImg} className="w-full" alt="girl worshipping" />
         </div>
