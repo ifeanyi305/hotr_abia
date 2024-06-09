@@ -6,10 +6,10 @@ import Footer from '../components/footer/Footer';
 import { contactInfo } from '../data/data';
 import { infoData } from '../data/data';
 import { resources } from '../data/data';
-import { FaInstagram } from "react-icons/fa";
-import { CiYoutube } from "react-icons/ci";
+import { RiInstagramFill } from "react-icons/ri";
+import { AiFillYoutube } from "react-icons/ai";
 import { FaTelegramPlane } from "react-icons/fa";
-import { AiOutlineFacebook } from "react-icons/ai";
+import { FaFacebook } from "react-icons/fa";
 import "./style.css";
 
 const SectionTitle = ({ title, className }) => (
@@ -72,7 +72,7 @@ const Home = () => {
             <div key={index} className="my-8">
               <p className="text-[22px] font-[400] text-white">{data.title}</p>
               <div className="md:flex md:justify-center">
-                <button className="bg-white flex items-center gap-2 px-6 py-[4px] text-[#438E5B] text-[17px]">
+                <button className="bg-white flex rounded-lg items-center gap-2 px-6 py-[4px] text-[#438E5B] text-[17px]">
                   {data.icon}
                   {data.btnText === "RECENT SERMONS" ? (
                     <a href={data.link} target="_blank" rel="noreferrer">{data.btnText}</a>
@@ -143,16 +143,16 @@ const Home = () => {
         <p className="text-white text-center text-[20px] font-sans font-[500] py-4">WE ARE SOCIAL</p>
         <div className="flex justify-center items-center gap-4">
           <a href="https://web.facebook.com/HouseOnTheRockAba" target="_blank" rel="noreferrer">
-            <AiOutlineFacebook className="text-[24px]" />
+            <FaFacebook className="text-[24px]" />
           </a>
           <a href="https://www.youtube.com/@houseontherockaba4362" target="_blank" rel="noreferrer">
-            <CiYoutube className="text-[24px]" />
+            <AiFillYoutube className="text-[28px]" />
           </a>
           <a href="https://t.me/hotraba" target="_blank" rel="noreferrer">
             <FaTelegramPlane className="text-[24px]" />
           </a>
           <a href="https://www.instagram.com/hotraba/" target="_blank" rel="noreferrer">
-            <FaInstagram className="text-[24px]" />
+            <RiInstagramFill className="text-[24px]" />
           </a>
         </div>
       </section>

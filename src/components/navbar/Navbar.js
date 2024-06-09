@@ -25,7 +25,16 @@ const Navbar = () => {
           <img src={logoWhite} alt="hotr_logo" className="" />
         </Link>
       </div>
-      <div>
+      <div className="hidden md:flex items-center gap-4">
+        {menuItems.map((menu, index) => (
+          <ul key={index}>
+            <Link to={menu.href} onClick={() => setIsOpen(false)} key={index}>
+              <li className="font-[600] my-6 text-[#777777] hover:text-[#99CC5A]">{menu.name}</li>
+            </Link>
+          </ul>
+        ))}
+      </div>
+      <div className="md:hidden">
         <button type="button" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? (<IoCloseSharp className="text-[#99CC5A] text-[25px]" />)
             : (<GiHamburgerMenu className="text-[#99CC5A] text-[25px]" />)
