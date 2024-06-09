@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import heroImg from "../images/hotr_church.jpeg";
+import heroImg from "../images/hotr_church.jpg";
 import horLine from "../images/horLine.png";
 import Footer from '../components/footer/Footer';
 import { contactInfo } from '../data/data';
@@ -62,22 +62,23 @@ const Home = () => {
   return (
     <div>
       <section>
-        <img src={heroImg} alt="hero section img" className="w-full" />
-        <div className="px-[2px]">
-          <p className="mt-[-200px] text-[#91edb7] text-center text-[64px] font-[600] licorice-regular">Welcome Home</p>
+        <div className="image-container">
+          <img src={heroImg} alt="hero section img" />
         </div>
       </section>
-      <section className="bgImage w-full mt-[20%] py-12 px-[10%]">
-        <div className="infoCon">
+      <section className="bgImage w-full py-12 px-[10%]">
+        <div className="infoCon md:flex md:justify-center md:gap-6">
           {infoData.map((data, index) => (
             <div key={index} className="my-8">
               <p className="text-[22px] font-[400] text-white">{data.title}</p>
-              <button className="bg-white flex items-center gap-2 px-6 py-[4px] text-[#438E5B] text-[17px]">
-                {data.icon}
-                {data.btnText === "RECENT SERMONS" ? (
-                  <a href={data.link} target="_blank" rel="noreferrer">{data.btnText}</a>
-                ) : (<Link to={data.link}>{data.btnText}</Link>)}
-              </button>
+              <div className="md:flex md:justify-center">
+                <button className="bg-white flex items-center gap-2 px-6 py-[4px] text-[#438E5B] text-[17px]">
+                  {data.icon}
+                  {data.btnText === "RECENT SERMONS" ? (
+                    <a href={data.link} target="_blank" rel="noreferrer">{data.btnText}</a>
+                  ) : (<Link to={data.link}>{data.btnText}</Link>)}
+                </button>
+              </div>
             </div>
           ))}
         </div>
@@ -156,35 +157,39 @@ const Home = () => {
         </div>
       </section>
       <section className="bg-[#313131] w-full py-6 px-[10%]">
-        <div>
-          <SectionTitle title="CONTACT US" />
-          <div className="mb-4">
-            <InfoText text={contactInfo.phone} className="text-[14px]" />
-            <InfoText text={contactInfo.email} className="text-[14px]" />
+        <div className="md:flex md:justify-between md:flex-wrap md:items-baseline">
+          <div>
+            <SectionTitle title="CONTACT US" />
+            <div className="mb-4">
+              <InfoText text={contactInfo.phone} className="text-[14px]" />
+              <InfoText text={contactInfo.email} className="text-[14px]" />
+            </div>
+            <div className="my-8">
+              {contactInfo.address.map((line, index) => (
+                <InfoText key={index} text={line} className={index === 0 ? "text-[18px] font-[400]" : "text-[14px]"} />
+              ))}
+            </div>
           </div>
-          <div className="my-8">
-            {contactInfo.address.map((line, index) => (
-              <InfoText key={index} text={line} className={index === 0 ? "text-[18px] font-[400]" : "text-[14px]"} />
-            ))}
-          </div>
-          <SectionTitle title="SERVICE TIMES" className="text-[19px] font-[600]" />
-          <div className="my-4">
-            <InfoText text="SUNDAYS" className="text-[18px] font-[400]" />
-            {contactInfo.serviceTimes.sundays.map((time, index) => (
-              <InfoText key={index} text={time} className="text-[14px]" />
-            ))}
-          </div>
-          <div className="my-4">
-            <InfoText text="THURSDAYS" className="text-[18px] font-[400]" />
-            {contactInfo.serviceTimes.thursdays.map((time, index) => (
-              <InfoText key={index} text={time} className="text-[14px]" />
-            ))}
-          </div>
-          <div className="my-4">
-            <InfoText text="SATURDAYS" className="text-[18px] font-[400]" />
-            {contactInfo.serviceTimes.saturdays.map((time, index) => (
-              <InfoText key={index} text={time} className="text-[14px]" />
-            ))}
+          <div>
+            <SectionTitle title="SERVICE TIMES" className="text-[19px] font-[600]" />
+            <div className="my-4">
+              <InfoText text="SUNDAYS" className="text-[18px] font-[400]" />
+              {contactInfo.serviceTimes.sundays.map((time, index) => (
+                <InfoText key={index} text={time} className="text-[14px]" />
+              ))}
+            </div>
+            <div className="my-4">
+              <InfoText text="THURSDAYS" className="text-[18px] font-[400]" />
+              {contactInfo.serviceTimes.thursdays.map((time, index) => (
+                <InfoText key={index} text={time} className="text-[14px]" />
+              ))}
+            </div>
+            <div className="my-4">
+              <InfoText text="SATURDAYS" className="text-[18px] font-[400]" />
+              {contactInfo.serviceTimes.saturdays.map((time, index) => (
+                <InfoText key={index} text={time} className="text-[14px]" />
+              ))}
+            </div>
           </div>
           {contactInfo.resources.map((resource, index) => (
             <div key={index} className="my-6">
