@@ -9,13 +9,13 @@ const Navbar = () => {
   const menuItems = [
     { name: 'HOME', href: '/' },
     // { name: 'EVENTS', href: '/announcements' },
-    { name: 'CITH', href: '/church_in_the_home' },
-    { name: 'MEMBER UPDATE', href: 'church_in_the_home/updpate_data' },
-    { name: 'GIVE', href: '/partner', special: true },
-    { name: 'TESTIMONY', href: '/testimony' },
-    { name: 'PRAYER', href: '/prayer_request' },
-    { name: 'WE ARE SOCIAL', href: '/socials' },
     { name: 'ABOUT', href: '/about' },
+    { name: 'PRAYER', href: '/prayer_request' },
+    { name: 'TESTIMONY', href: '/testimony' },
+    { name: 'GIVE', href: '/partner', special: true },
+    { name: 'CITH CENTERS', href: '/church_in_the_home' },
+    { name: 'MEMBER UPDATE', href: 'church_in_the_home/updpate_data' },
+    { name: 'WE ARE SOCIAL', href: '/socials' },
   ];
 
   return (
