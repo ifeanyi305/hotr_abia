@@ -1,11 +1,15 @@
 import React from 'react';
 import ComponentFooter from '../../../components/footer/ComponentFooter';
 import { aboutInfo } from '../../../data/data';
+import aboutusImg from "../../../images/aboutImg.jpeg";
 
 const About = () => {
   return (
     <div>
       <div className="py-[8%] bg-[#E7FFF1] h-svh">
+        <div className="w-full">
+          <img src={aboutusImg} className="w-full" alt="girl worshipping" />
+        </div>
         <div>
           {aboutInfo.map((about, index) => (
             <div key={about.id} className={`px-[6%] py-6 ${index % 2 === 1 ? 'bg-white' : 'bg-transparent'}`}>
